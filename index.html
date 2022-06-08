@@ -28,16 +28,33 @@
         <label for="e-mail">E-mail address</label>
         <input type="email" id="e-mail" name="e-mail">
       </fieldset>
+
       <fieldset>
         <legend>CV and cover letter</legend>
 
-        <label for="name">Please attach your CV/Resume</label>
+        <label for="cv">Please attach your CV/Resume</label>
         <input type="file" id="cv" name="cv">
 
-        <label for="name">Please attach your Cover letter</label>
+        <label for="cv">Please attach your Cover letter</label>
         <input type="file" id="cover-letter" name="cover-letter">
 
         <textarea name="manager-message" rows="20" cols="60" placeholder="Alternatively, write a message to the hiring manager"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Visa status</legend>
+        <div class="">
+          <label for="residency-status">Do you need a sponsorship visa?</label>
+          <input type="radio" id="residency-status-yes" name="residency-status" value="Yes">
+          <label for="residency-status-yes">Yes</label>
+          <input type="radio" id="residency-status-no" name="residency-status" value="No">
+          <label for="residency-status-no">No</label>
+        </div>
+        <label for="name">What's your notice in advance?</label>
+        <input type="text" id="notice-advance" name="notice-advance">
+
+
+
       </fieldset>
     </form>
   </body>
