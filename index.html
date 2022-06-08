@@ -43,7 +43,7 @@
 
       <fieldset>
         <legend>Visa status</legend>
-        <div class="">
+        <div>
           <label for="residency-status">Do you need a sponsorship visa?</label>
           <input type="radio" id="residency-status-yes" name="residency-status" value="Yes">
           <label for="residency-status-yes">Yes</label>
@@ -52,10 +52,25 @@
         </div>
         <label for="name">What's your notice in advance?</label>
         <input type="text" id="notice-advance" name="notice-advance">
-
-
-
       </fieldset>
+
+    <fieldset>
+      <legend>Job alert feedback</legend>
+      <label for="job-alert-feedbak"> Where did you hear fromt this job position</label>
+      <select name="">
+        <option value="linkedin">LinkedIn</option>
+        <option value="soundlister">SoundLister</option>
+        <option value="google">Google</option>
+        <option value="indeed">Indeed</option>
+        <option value="waves-website">Waves in a room website</option>
+      </select>
+    </fieldset>
+
+    <div>
+      <input type="checkbox" name="personal-data-check" id="personal-data-check">
+      <label for="personal-data-check">I authorize Waves in a room to keep my personal data during the recruiment process</label>
+    </div>
+
     </form>
   </body>
 </html>
