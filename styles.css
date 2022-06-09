@@ -6,3 +6,10 @@ body{
 {
   background-color: #22211F;
 }
+
+.job-ad{
+  background-image: url(./images/isotipo-icon4.png);
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position: center;
+}
