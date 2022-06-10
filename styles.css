@@ -7,14 +7,20 @@ body{
 .logo-banner
 {
   background-color: #22211F;
-  padding: 20px;
+  padding: 120px;
 }
 
 .job-ad{
-  background-attachment: local;
   background-image: url(./images/isotipo-icon4-gray.png);
+  background-attachment: local;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 500px;
   padding: 30px;
+}
+
+#imagotipo{
+  position: fixed;
+  left: 25px;
+
 }
