@@ -2,6 +2,7 @@ body{
   display: flex;
   font-family: "Advent Pro",monospace,sans-serif, courier;
   font-size: 22px;
+  line-height: 30px;
 }
 
 .logo-banner
@@ -11,8 +12,8 @@ body{
 }
 
 .job-ad{
-  background-image: url(./images/isotipo-icon4-gray.png);
   background-attachment: local;
+  background-image: url(./images/isotipo-icon4-gray.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 500px;
@@ -20,7 +21,6 @@ body{
 }
 
 #imagotipo{
-  position: fixed;
   left: 25px;
-
+  position: fixed;
 }
