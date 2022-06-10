@@ -11,10 +11,10 @@ body{
 }
 
 .job-ad{
+  background-attachment: fixed;
   background-image: url(./images/isotipo-icon4-gray.png);
   background-position: 75%;
   background-repeat: no-repeat;
   background-size: 500px;
-  background-attachment: fixed;
   padding: 30px;
 }
