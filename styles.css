@@ -11,6 +11,9 @@ button{
   font-size: 17px;
   padding: 10px 30px;
   text-decoration: none;
+  margin-top: 30px;
+  margin-right: 150px;
+  margin-left: 30px;
 }
 
 fieldset{
@@ -37,4 +40,9 @@ fieldset{
 #imagotipo{
   left: 25px;
   position: fixed;
+}
+
+#personal-data-check{
+  margin: 10px;
+  margin-right: 5px;
 }
