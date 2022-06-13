@@ -15,7 +15,6 @@ button{
 
 fieldset{
   border-style:inset;
-  display: flex;
   margin: 30px;
   width: 60%;
 }
