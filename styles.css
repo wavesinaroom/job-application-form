@@ -5,8 +5,18 @@ body{
   line-height: 30px;
 }
 
+button{
+  cursor: pointer;
+  justify-content: space-between;
+  font-size: 17px;
+  padding: 10px 30px;
+  text-decoration: none;
+}
+
 fieldset{
   border-style:inset;
+  display: flex;
+  margin: 30px;
   width: 60%;
 }
 
