@@ -37,6 +37,10 @@ fieldset{
   width: 60%;
 }
 
+input[type="text"]:focus{
+  border-color: orange;
+}
+
 .logo-banner
 {
   background-color: #22211F;
@@ -50,6 +54,11 @@ fieldset{
   background-repeat: no-repeat;
   background-size: 500px;
   padding: 30px;
+}
+
+.submission-buttons{
+  display: flex;
+
 }
 
 #imagotipo{
