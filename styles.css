@@ -24,10 +24,9 @@ button{
 }
 
 button:active{
-  background-color: #d7dce6;
-  font-size: 16px;
+  background-color: #d2d4dc;
   transition-duration: 50;
-  margin-right: 222px;
+  transform: scale(0.95);
 }
 
 fieldset{
