@@ -42,6 +42,11 @@ fieldset{
   position: fixed;
 }
 
+#manager-message{
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
 #personal-data-check{
   margin: 10px;
   margin-right: 5px;
