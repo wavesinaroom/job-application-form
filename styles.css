@@ -41,6 +41,14 @@ input[type="text"]:focus{
   border-color: orange;
 }
 
+input[type="radio"]:checked{
+  background-color: orange;
+}
+
+select{
+  font-size: 20px;
+}
+
 .logo-banner
 {
   background-color: #22211F;
