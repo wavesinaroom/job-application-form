@@ -5,6 +5,11 @@ body{
   line-height: 30px;
 }
 
+fieldset{
+  border-style:inset;
+  width: 60%;
+}
+
 .logo-banner
 {
   background-color: #22211F;
