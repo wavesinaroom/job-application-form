@@ -1,6 +1,5 @@
 *{
   font-family: "Advent Pro",monospace,sans-serif, courier;
-
 }
 
 body{
@@ -28,6 +27,7 @@ button:active{
   background-color: #d7dce6;
   font-size: 16px;
   transition-duration: 50;
+  margin-right: 222px;
 }
 
 fieldset{
@@ -49,6 +49,10 @@ select{
   font-size: 20px;
 }
 
+textarea{
+  font-size: 20px;
+}
+
 .logo-banner
 {
   background-color: #22211F;
@@ -66,7 +70,7 @@ select{
 
 .submission-buttons{
   display: flex;
-  
+
 }
 
 #imagotipo{
