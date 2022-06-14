@@ -30,6 +30,10 @@ button:active{
   transform: scale(0.95);
 }
 
+form > p{
+  margin-left: 30px;
+}
+
 fieldset{
   border-style:inset;
   line-height: 32px;
