@@ -9,16 +9,16 @@ body{
 }
 
 button{
-  border-width: thin;
   border-radius: 5px;
+  border-width: thin;
   box-shadow: 2px 3px gray;
   cursor: pointer;
   font-size: 17px;
   font-weight: bold;
   justify-content: space-between;
-  margin-top: 30px;
-  margin-right: 220px;
   margin-left: 30px;
+  margin-right: 220px;
+  margin-top: 30px;
   padding: 10px 30px;
   text-decoration: none;
 }
@@ -26,8 +26,8 @@ button{
 button:active{
   background-color: #eeeeee;
   box-shadow: 0.5px 1.5px gray;
-  transition-duration: 50;
   transform: scale(0.95);
+  transition-duration: 50;
 }
 
 form > p{
@@ -42,8 +42,8 @@ fieldset{
 }
 
 input{
-  border-width: thin;
   border-radius: 2px;
+  border-width: thin;
   font-size: 20px;
 }
 
@@ -59,9 +59,9 @@ input[type="file"]{
   font-size: 14px;
 }
 
-input:invalid {
-  border-width:medium;
-  border-color: red;
+input:required{
+  border-color: black;
+  border-width: thin;
 }
 
 select{
