@@ -55,6 +55,10 @@ input[type="radio"]:checked{
   background-color: orange;
 }
 
+input[type="file"]{
+  font-size: 14px;
+}
+
 input:invalid {
   border-width:medium;
   border-color: red;
