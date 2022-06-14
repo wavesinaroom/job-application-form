@@ -41,12 +41,21 @@ fieldset{
   width: 60%;
 }
 
+input{
+  border-width: thin;
+  border-radius: 2px;
+}
+
 input[type="text"]:focus{
   border-color: orange;
 }
 
 input[type="radio"]:checked{
   background-color: orange;
+}
+
+input:invalid {
+  border-color: red;
 }
 
 select{
