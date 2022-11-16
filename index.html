@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src='validation.js' defer></script>
   </head>
   <body>
     <aside class="logo-banner">
@@ -58,25 +59,25 @@
           </ul>
         </div>
 
-            <form class="" action="index.html" method="post">
+            <form novalidate class="" action="index.html" method="post">
               <p>Fields marked with * are required</p>
               <fieldset>
                 <legend><strong>Contact Details</strong></legend>
                 <div>
                   <label for="name">Name *<br></label>
-                  <input type="text" id="name" name="name" required>
+                  <input type="text" id="name" name="name" >
                 </div>
                 <div>
                   <label for="surname">Surname *<br></label>
-                  <input type="text" id="surname" name="surname" required>
+                  <input type="text" id="surname" name="surname" >
                 </div>
                 <div>
                   <label for="country">Country *<br></label>
-                  <input type="text" id="country" name="country" required>
+                  <input type="text" id="country" name="country" >
                 </div>
                 <div>
                   <label for="city">City *<br></label>
-                  <input type="text" id="city" name="city" required>
+                  <input type="text" id="city" name="city" >
                 </div>
                 <div>
                   <label for="phone-number">Phone Number<br></label>
@@ -84,7 +85,7 @@
                 </div>
                 <div>
                   <label for="e-mail">E-mail address *<br></label>
-                  <input type="email" id="e-mail" name="e-mail" required>
+                  <input type="email" id="e-mail" name="e-mail" >
                 </div>
                 <div>
                   <label for="date-birth">Date of birth<br></label>
@@ -96,7 +97,7 @@
                 <legend>CV and cover letter</legend>
                 <div>
                   <label for="cv">Please attach your CV/Resume *<br></label>
-                  <input type="file" id="cv" name="cv" required>
+                  <input type="file" id="cv" name="cv" >
                 </div>
                 <div>
                   <label for="cv">Please attach your Cover letter (optional)</label>
@@ -105,7 +106,7 @@
                 <textarea id="manager-message" name="manager-message" rows="20" cols="60" placeholder="Alternatively, write a message to the hiring manager"></textarea>
                 <div>
                   <label for="portfolio-website">Portfolio link *</label>
-                  <input type="url" id="portfolio-website" name="portfolio-website" required>
+                  <input type="url" id="portfolio-website" name="portfolio-website" >
                 </div>
                 <div>
                   <label for="linkedin-profile">LinkedIn profile link</label>
@@ -143,7 +144,7 @@
               </fieldset>
 
               <div>
-                <input type="checkbox" name="personal-data-check" id="personal-data-check" required>
+                <input type="checkbox" name="personal-data-check" id="personal-data-check" >
                 <label for="personal-data-check">I authorize Waves in a Room to keep my personal data during the recruiment process *</label>
               </div>
               <div class="submission-buttons">
