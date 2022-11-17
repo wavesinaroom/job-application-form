@@ -4,6 +4,7 @@ const notification = document.getElementById('notification');
 
 form.addEventListener('submit', (e)=>{
   if(!form.checkValidity()){
-    e.preventDefault(); }
-    notification.textContent = 'Oops';
+    e.preventDefault(); 
+    notification.textContent = 'Please check your fields';
+  }    
 });
