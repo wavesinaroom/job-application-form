@@ -78,7 +78,7 @@ function checkCVFile(){
       notification.innerHTML += '* File size shouldn\'t exceed 5MB <br/>';
     }  
   }else{
-    notification.innerHTML += '* No CV file uploaded';
+    notification.innerHTML += '* No CV file uploaded <br/>';
   }
 }
 
