@@ -63,11 +63,6 @@ input[type="file"]{
   font-size: 14px;
 }
 
-input:required{
-  border-color: black;
-  border-width: thin;
-}
-
 span{
   color: red;
 }
