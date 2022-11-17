@@ -1,5 +1,6 @@
 const form = document.querySelector('form');
 const notification = document.getElementById('notification');
+const inputs = [...document.querySelectorAll('input')];
 
 form.addEventListener('submit', (e)=>{
   if(!form.checkValidity()){
@@ -21,11 +22,15 @@ form.addEventListener('submit', (e)=>{
 });
 
 function checkName(){
+  if(!form.name.validity.valid){
+    document.getElementById(form.name.name).style.borderColor = 'red';
+    form.name.style.borderColor = 'red';
   if(form.name.validity.patternMismatch){
     notification.innerHTML += '* Name can\'t contain numbers or special characters <br/>'; 
   }else if (form.name.validity.valueMissing){
     notification.innerHTML += '* Name is required <br/>'; 
   }
+    }
 }
 
 function checkSurname(){

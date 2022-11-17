@@ -47,10 +47,6 @@ input{
   font-size: 20px;
 }
 
-input:invalid{
-  border-color: red;
-}
-
 input[type="text"]:focus{
   border-color: orange;
 }
