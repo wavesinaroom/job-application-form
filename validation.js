@@ -9,6 +9,7 @@ form.addEventListener('submit', (e)=>{
     checkSurname();
     checkCity();
     checkPhoneNumber();
+    checkEmail();
   }    
 
 });
@@ -42,3 +43,14 @@ function checkPhoneNumber(){
     notification.innerHTML += '* Phone number can\'t contain letters or special characters <br/>'; 
   }
 }
+
+function checkEmail(){
+  if(form.email.validity.typeMismatch){
+    notification.innerHTML += '* Invalid Email format<br/>'; 
+  }else if (form.email.validity.valueMissing){
+    notification.innerHTML += '* Email is required <br/>'; 
+  }
+}
+
+
+
