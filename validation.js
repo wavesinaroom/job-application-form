@@ -7,6 +7,8 @@ form.addEventListener('submit', (e)=>{
     notification.innerHTML = 'Please fix errors: <br/>';
     checkName();
     checkSurname();
+    checkCity();
+    checkPhoneNumber();
   }    
 
 });
@@ -24,5 +26,19 @@ function checkSurname(){
     notification.innerHTML += '* Surname can\'t contain numbers or special characters <br/>'; 
   }else if (form.surname.validity.valueMissing){
     notification.innerHTML += '* Surname is required <br/>'; 
+  }
+}
+
+function checkCity(){
+  if(form.city.validity.patternMismatch){
+    notification.innerHTML += '* City can\'t contain numbers or special characters <br/>'; 
+  }else if (form.city.validity.valueMissing){
+    notification.innerHTML += '* City is required <br/>'; 
+  }
+}
+
+function checkPhoneNumber(){
+  if(form.phoneNumber.validity.patternMismatch){
+    notification.innerHTML += '* Phone number can\'t contain letters or special characters <br/>'; 
   }
 }
