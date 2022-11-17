@@ -7,11 +7,15 @@ form.addEventListener('submit', (e)=>{
     notification.innerHTML = 'Please fix errors: <br/>';
     checkName();
     checkSurname();
+    checkCountry();
     checkCity();
     checkPhoneNumber();
     checkEmail();
     checkCVFile();
     checkCoverLetterFile();
+    checkPortfolio();
+    checkLinkedIn();
+    checkAuthorization();
   }    
 
 });
@@ -32,6 +36,13 @@ function checkSurname(){
   }
 }
 
+function checkCountry(){
+  if(form.country.validity.patternMismatch){
+    notification.innerHTML += '* Country can\'t contain numbers or special characters <br/>'; 
+  }else if (form.country.validity.valueMissing){
+    notification.innerHTML += '* Country is required <br/>'; 
+  }
+}
 function checkCity(){
   if(form.city.validity.patternMismatch){
     notification.innerHTML += '* City can\'t contain numbers or special characters <br/>'; 
@@ -86,6 +97,22 @@ function checkCoverLetterFile(){
   }
 }
 
+function checkPortfolio(){
+  if(form.portfolio.validity.typeMismatch){
+    notification.innerHTML += '* Invalid Portfolio url format<br/>'; 
+  }else if (form.portfolio.value === ''){
+    notification.innerHTML += '* Portfolio url is required <br/>'; 
+  }
+}
 
+function checkLinkedIn(){
+  if(form.linkedin.validity.typeMismatch){
+    notification.innerHTML += '* Invalid LinkedIn url format<br/>';
+  }
+}
 
-
+function checkAuthorization(){
+  if(form.personalDataCheck.validity.valueMissing){
+    notification.innerHTML += '* Check privacy authorization policy';
+  }
+}
