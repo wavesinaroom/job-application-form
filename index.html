@@ -70,15 +70,15 @@
                 </div>
                 <div>
                   <label for="surname">Surname *<br></label>
-                  <input type="text" id="surname" name="surname" required pattern='[A-Za-z]' >
+                  <input type="text" id="surname" name="surname" required pattern='[A-Za-z]+' >
                 </div>
                 <div>
                   <label for="country">Country *<br></label>
-                  <input type="text" id="country" name="country" required pattern='[A-Za-z]'>
+                  <input type="text" id="country" name="country" required pattern='[A-Za-z]+'>
                 </div>
                 <div>
                   <label for="city">City *<br></label>
-                  <input type="text" id="city" name="city" required pattern='[A-Za-z]'>
+                  <input type="text" id="city" name="city" required pattern='[A-Za-z]+'>
                 </div>
                 <div>
                   <label for="phone-number">Phone Number<br></label>
@@ -98,7 +98,7 @@
                 <legend>CV and cover letter</legend>
                 <div>
                   <label for="cv">Please attach your CV/Resume *<br></label>
-                  <input type="file" id="cv" name="cv" >
+                  <input type="file" id="cv" name="cv" required>
                 </div>
                 <div>
                   <label for="cv">Please attach your Cover letter (optional)</label>
