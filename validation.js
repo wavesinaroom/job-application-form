@@ -4,17 +4,25 @@ const notification = document.getElementById('notification');
 form.addEventListener('submit', (e)=>{
   if(!form.checkValidity()){
     e.preventDefault(); 
-    notification.textContent = 'Please check your fields';
+    notification.innerHTML = 'Please fix errors: <br/>';
     checkName();
+    checkSurname();
   }    
 
 });
 
 function checkName(){
   if(form.name.validity.patternMismatch){
-    form.name.setCustomValidity('Can\'t contain numbers or special characters');
+    notification.innerHTML += '* Name can\'t contain numbers or special characters <br/>'; 
   }else if (form.name.validity.valueMissing){
-    form.name.setCustomValidity('Required');
+    notification.innerHTML += '* Name is required <br/>'; 
   }
-  form.name.reportValidity();
+}
+
+function checkSurname(){
+  if(form.surname.validity.patternMismatch){
+    notification.innerHTML += '* Surname can\'t contain numbers or special characters <br/>'; 
+  }else if (form.surname.validity.valueMissing){
+    notification.innerHTML += '* Surname is required <br/>'; 
+  }
 }
