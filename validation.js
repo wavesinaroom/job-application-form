@@ -6,5 +6,7 @@ form.addEventListener('submit', (e)=>{
     e.preventDefault(); 
     notification.textContent = 'Please check your fields';
     alert(form.name.validity.patternMismatch);
+    form.name.setCustomValidity('Wrong');
+    form.name.reportValidity();
   }    
 });
