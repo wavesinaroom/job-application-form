@@ -66,27 +66,27 @@
                 <legend><strong>Contact Details</strong></legend>
                 <div>
                   <label for="name">Name *<br></label>
-                  <input type="text" id="name" name="name" pattern="[A-Za-z]+">
+                  <input type="text" id="name" name="name" required pattern='[A-Za-z]+'>
                 </div>
                 <div>
                   <label for="surname">Surname *<br></label>
-                  <input type="text" id="surname" name="surname" >
+                  <input type="text" id="surname" name="surname" required pattern='[A-Za-z]' >
                 </div>
                 <div>
                   <label for="country">Country *<br></label>
-                  <input type="text" id="country" name="country" >
+                  <input type="text" id="country" name="country" required pattern='[A-Za-z]'>
                 </div>
                 <div>
                   <label for="city">City *<br></label>
-                  <input type="text" id="city" name="city" >
+                  <input type="text" id="city" name="city" required pattern='[A-Za-z]'>
                 </div>
                 <div>
                   <label for="phone-number">Phone Number<br></label>
-                  <input type="text" id="phone-number" name="phone-number">
+                  <input type="text" id="phone-number" name="phone-number" pattern='/d+' >
                 </div>
                 <div>
                   <label for="e-mail">E-mail address *<br></label>
-                  <input type="email" id="e-mail" name="e-mail" >
+                  <input type="email" id="e-mail" name="e-mail" required>
                 </div>
                 <div>
                   <label for="date-birth">Date of birth<br></label>
@@ -145,7 +145,7 @@
               </fieldset>
 
               <div>
-                <input type="checkbox" name="personal-data-check" id="personal-data-check" >
+                <input type="checkbox" name="personal-data-check" id="personal-data-check" required>
                 <label for="personal-data-check">I authorize Waves in a Room to keep my personal data during the recruiment process *</label>
               </div>
               <div class="submission-buttons">
