@@ -11,6 +11,7 @@ form.addEventListener('submit', (e)=>{
     checkPhoneNumber();
     checkEmail();
     checkCVFile();
+    checkCoverLetterFile();
   }    
 
 });
@@ -61,14 +62,30 @@ function checkCVFile(){
     const maxFileSize = 5000;
 
     if(!allowed.includes(extension)){
-      notification.innerHTML += '* Invalid CV file type';
+      notification.innerHTML += '* Invalid CV file type <br/>';
     }else if(fileInput.files[0].size>maxFileSize){
-      notification.innerHTML += '* File size shouldn\'t exceed 5MB';
+      notification.innerHTML += '* File size shouldn\'t exceed 5MB <br/>';
     }  
   }else{
     notification.innerHTML += '* No CV file uploaded';
   }
 }
+
+function checkCoverLetterFile(){
+  if(document.getElementById('cover-letter').files[0]){
+    const fileInput = document.getElementById('cover-letter');
+    const allowed = ['pdf', 'docx', 'txt'];
+    const extension = fileInput.files[0].name.split('.').pop();
+    const maxFileSize = 5000;
+
+    if(!allowed.includes(extension)){
+      notification.innerHTML += '* Invalid Cover Letter file type <br/>';
+    }else if(fileInput.files[0].size>maxFileSize){
+      notification.innerHTML += '* File size shouldn\'t exceed 5MB <br/>';
+    }  
+  }
+}
+
 
 
 
